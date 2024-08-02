@@ -72,6 +72,8 @@
       3. major version = 0xFF
       4. minor Version = 0xFFFFFFFF
       5. TTL = 0x00000000 = stop, TTL = 0xFFFFFFFF = considered valid until next reboot.
+      6.  发送方不应在Find Service Entry中引用Endpoint Options或Multicast Options。
+          接收方应在Find Service Entry中忽略Endpoint Options和Multicast Options。
 2. Offer Service Entry
    1. The offer service entry type shall be used to offer a service to other communication partners.
    2. entry field:
